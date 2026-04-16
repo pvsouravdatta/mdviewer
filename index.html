@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="toolbar">
+    <button id="toggle-btn" class="toolbar-btn" disabled>Edit</button>
+    <button id="theme-btn" class="toolbar-btn">Dark</button>
+  </div>
+  <div id="content">
+    <div class="placeholder">
+      <p>Open a Markdown file to get started</p>
+      <p><kbd>Ctrl+O</kbd> to open &bull; <kbd>F5</kbd> to refresh &bull; <kbd>Ctrl+S</kbd> to save</p>
+    </div>
+  </div>
+  <textarea id="editor" style="display: none;"></textarea>
+  <script src="./node_modules/marked/lib/marked.umd.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>

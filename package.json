@@ -1,0 +1,27 @@
+{
+  "name": "mdviewer",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "A simple markdown file viewer",
+  "devDependencies": {
+    "electron": "^35.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "dependencies": {
+    "marked": "^15.0.0"
+  },
+  "build": {
+    "appId": "com.mdviewer.app",
+    "productName": "MD Viewer",
+    "win": {
+      "target": "portable"
+    }
+  }
+}
